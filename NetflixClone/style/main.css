@@ -1,0 +1,107 @@
+:root{/*Declarar variável no css*/
+    --vermelho: #e50914;
+    --preta: #141414;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* { /*CSS reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que todas as caixas sejam respeitadas. Os elementos de dentro das caixas vão se manter dentro. Caso não tivesse, elementos maiores que a caixa iam tentar aumentar elas.*/
+}
+/*ELEMENTOS BASE*/
+body {
+    background: var(--preta);
+    font-family: "Arial", Times, serif ;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left:5px ;
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', monospace;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: #fff;
+    transition: 0.45s;
+}
+
+/*FILME PRINCIPAL*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/*h3, p{
+    text-shadow: 2px 2px 4px black;
+}*/
+
+.container{
+    margin-left: 20px
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
